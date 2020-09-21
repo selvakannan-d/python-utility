@@ -1,0 +1,24 @@
+description: RelatedServiceOrderItem
+properties:
+- '@referredType':
+    description: The actual type of the target instance when needed for disambiguation.
+    type: string
+- itemAction:
+    description: item action type (OrderItemActionType). Action of the order item
+      for this service.
+    items:
+      $ref: '#/components/schemas/itemAction'
+    type: array
+- itemId:
+    description: Identifier of the order item where the service was managed.
+    type: string
+- role:
+    description: role of the service order item for this service.
+    type: string
+- serviceOrderHref:
+    description: Reference of the related entity.
+    type: string
+- serviceOrderId:
+    description: Unique identifier of a related entity.
+    type: string
+type: object

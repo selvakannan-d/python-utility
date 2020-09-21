@@ -1,0 +1,4 @@
+id string Unique identifier of the target feature.
+name string This is the name of the target feature.
+relationshipType string This is the type of the feature relationship.
+validFor timeperiod The period for which this feature relationship is valid.

@@ -1,0 +1,33 @@
+description: Feature
+properties:
+- constraint:
+    description: list of constraint references (ConstraintRef [*]). This is a list
+      of feature constraints.
+    items:
+      $ref: '#/components/schemas/constraint'
+    type: array
+- featureCharacteristic:
+    description: list of characteristics (Characteristic [1..*]). This is a list of
+      Characteristics for a particular feature.
+    items:
+      $ref: '#/components/schemas/featureCharacteristic'
+    type: array
+- featureRelationship:
+    description: list of feature relationships (FeatureRelationship [*]). Configuration
+      feature.
+    items:
+      $ref: '#/components/schemas/featureRelationship'
+    type: array
+- id:
+    description: Unique identifier of the feature.
+    type: string
+- isBundle:
+    description: True if this is a feature group. Default is false.
+    type: boolean
+- isEnabled:
+    description: True if this feature is enabled. Default is true.
+    type: boolean
+- name:
+    description: This is the name for the feature
+    type: string
+type: object

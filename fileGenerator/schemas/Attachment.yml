@@ -1,0 +1,39 @@
+description: Attachment
+properties:
+  '@type':
+    description: Indicates the type of resource.
+    type: String
+  '@baseType':
+    description: Indicates the type of resource.
+    type: String
+  '@schemaLocation':
+    description: Link to schema describing this resource.
+    type: String
+  name:
+    description: The name of attached file in the communication message.
+    type: String
+  path:
+    description: The path of the attached file in the communication message.
+    type: String
+  description:
+    description: Description of the attached file
+    type: String
+  href:
+    description: href of the attached file
+    type: String
+  mimeType:
+    description: Multi purpose Internet Mail Extensions Type
+    type: String
+  Size:
+    description: Size of the attached file
+    type: Integer
+  sizeUnit:
+    description: Size Unit of the attached file
+    type: Integer
+  url:
+    description: URL of the attached file
+    type: String
+  validFor:
+    $ref: '#/components/schemas/TimePeriod'
+    description: "Valid For period of the attached file"
+type: object

@@ -1,0 +1,5 @@
+@referredType string The (class) type of the referred constraint.
+href string Hyperlink reference to the target constraint.
+id string reference id to the target constraint.
+name string Name given to the constraint.
+version string constraint version.

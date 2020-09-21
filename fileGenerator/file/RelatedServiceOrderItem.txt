@@ -1,0 +1,6 @@
+@referredType string The actual type of the target instance when needed for disambiguation.
+itemAction OrderItemActionType item action type (OrderItemActionType). Action of the order item for this service.
+itemId string Identifier of the order item where the service was managed.
+role string role of the service order item for this service.
+serviceOrderHref string Reference of the related entity.
+serviceOrderId string Unique identifier of a related entity.

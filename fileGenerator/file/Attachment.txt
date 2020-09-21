@@ -1,0 +1,12 @@
+@type String Indicates the type of resource.
+@baseType String Indicates the type of resource.
+@schemaLocation String Link to schema describing this resource.
+name String The name of attached file in the communication message.
+path String The path of the attached file in the communication message.
+description String Description of the attached file
+href String href of the attached file
+mimeType String Multi-purpose Internet Mail Extensions Type
+Size Integer Size of the attached file
+sizeUnit Integer Size Unit of the attached file
+url String URL of the attached file
+validFor TimePeriod “Valid For” period of the attached file

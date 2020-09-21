@@ -1,0 +1,24 @@
+description: Sender
+properties:
+  '@type':
+    description: Indicates the type of resource
+    type: String
+  '@basetype':
+    description: Indicates the type of resource
+    type: String
+  '@schemaLocation':
+    description: It provides the link to the schema describing REST resource
+    type: String
+  email:
+    description: Sender address of email, if the communication type is email
+    type: String
+  id:
+    description: ID of the sender
+    type: String
+  name:
+    description: Name of the sender
+    type: String
+  phoneNumber:
+    description: Phone number of the sender, if the communication type is SMS.
+    type: String
+type: object

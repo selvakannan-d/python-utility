@@ -1,0 +1,11 @@
+description: test
+properties:
+- name:
+    description: this field holds name for the string
+    type: string
+- ref:
+    description: this field holds attachment object
+    items:
+      $ref: '#/components/schemas/ref'
+    type: array
+type: object

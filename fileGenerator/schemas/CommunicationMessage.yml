@@ -1,0 +1,90 @@
+description: CommunicationMessage
+properties:
+  '@type':
+    description: Indicates the type of resource.
+    type: String
+  '@baseType':
+    description: Indicates the type of resource.
+    type: String
+  '@schemaLocation':
+    description: Link to schema describing this resource.
+    type: String
+  id:
+    description: Unique identifier of Communication Message (inherit from Business
+      Interaction ABE)
+    type: String
+  href:
+    description: Hypertext Reference of the Communication Message.
+    type: String
+  Priority:
+    description: Priority level for applying this alteration among all the defined
+      alterations.
+    type: Integer
+  Type:
+    description: "It could be SMS, Email, \u201CMobileApp\u201D (push notification)"
+    type: String
+  Subject:
+    description: The title of the message.It is necessary for the email and mobile
+      app push.
+    type: String
+  Content:
+    description: The content of the communication message.
+    type: String
+  SendTime:
+    description: The time of sending communication message.(inherit from Business
+      Interaction ABE)
+    format: date time
+    type: string
+  sendTimeComplete:
+    description: The time of completion of sending communicationmessage.(inherit from
+      Business Interaction ABE)
+    format: date time
+    type: string
+  status:
+    description: Status of communication message(inherit from Business Interaction
+      ABE)
+    type: String
+  description:
+    description: Description for the whole object(inherit from Business Interaction
+      ABE)
+    type: String
+  logFlag:
+    description: It is used to decide whether the contact log needs to be recorded.
+    type: Boolean
+  callbackFlag:
+    description: It is used to decide whether the contact message needs to be replied.
+    type: Boolean
+  tryTimes:
+    description: If fail to send the communication message, how many times the system
+      will retry.
+    type: Integer
+  version:
+    description: The version of the message template.
+    type: String
+  characteristic:
+    description: The values of parameters which are used in the content if the content
+      contains them.
+    items:
+      $ref: '#/components/schemas/characteristic'
+    type: array
+  sender:
+    description: Sender of the communication message.
+    items:
+      $ref: '#/components/schemas/sender'
+    type: array
+  receiver:
+    description: Receivers of the communication message.
+    items:
+      $ref: '#/components/schemas/receiver'
+    type: array
+  relatedParty:
+    description: The party entity of the receiver (user)
+    items:
+      $ref: '#/components/schemas/relatedParty'
+    type: array
+  attachment:
+    description: The attachments of the communication message (when it is email type).
+    items:
+      $ref: '#/components/schemas/attachment'
+    type: array
+type: object

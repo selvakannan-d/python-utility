@@ -1,0 +1,7 @@
+constraint ConstraintRef list of constraint references (ConstraintRef [*]). This is a list of feature constraints.
+featureCharacteristic Characteristic list of characteristics (Characteristic [1..*]). This is a list of Characteristics for a particular feature.
+featureRelationship FeatureRelationship list of feature relationships (FeatureRelationship [*]). Configuration feature.
+id string Unique identifier of the feature.
+isBundle boolean True if this is a feature group. Default is false.
+isEnabled boolean True if this feature is enabled. Default is true.
+name string This is the name for the feature

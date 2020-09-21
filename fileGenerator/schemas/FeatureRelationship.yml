@@ -1,0 +1,15 @@
+description: FeatureRelationship
+properties:
+- id:
+    description: Unique identifier of the target feature.
+    type: string
+- name:
+    description: This is the name of the target feature.
+    type: string
+- relationshipType:
+    description: This is the type of the feature relationship.
+    type: string
+- validFor:
+    $ref: '#/components/schemas/timeperiod'
+    description: The period for which this feature relationship is valid.
+type: object

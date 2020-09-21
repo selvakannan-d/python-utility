@@ -1,0 +1,9 @@
+description: CommunicationRequestCharacteristic
+properties:
+  name:
+    description: Content parameter identifier.
+    type: String
+  value:
+    description: Content parameter value.
+    type: String
+type: object

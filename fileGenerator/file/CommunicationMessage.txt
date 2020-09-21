@@ -1,0 +1,22 @@
+@type String Indicates the type of resource.
+@baseType String Indicates the type of resource.
+@schemaLocation String Link to schema describing this resource.
+id String Unique identifier of Communication Message (inherit from Business Interaction ABE)
+href String Hypertext Reference of the Communication Message.
+Priority Integer Priority level for applying this alteration among all the defined alterations.
+Type String It could be SMS, Email, “MobileApp” (push notification)
+Subject String The title of the message.It is necessary for the email and mobile app push.
+Content String The content of the communication message.
+SendTime DateTime The time of sending communication message.(inherit from Business Interaction ABE)
+sendTimeComplete DateTime The time of completion of sending communicationmessage.(inherit from Business Interaction ABE)
+status String Status of communication message(inherit from Business Interaction ABE)
+description String Description for the whole object(inherit from Business Interaction ABE)
+logFlag Boolean It is used to decide whether the contact log needs to be recorded.
+callbackFlag Boolean It is used to decide whether the contact message needs to be replied.
+tryTimes Integer If fail to send the communication message, how many times the system will retry.
+version String The version of the message template.
+characteristic CommunicationRequestCharacteristic The values of parameters which are used in the content if the content contains them.
+sender Sender Sender of the communication message.
+receiver Receiver Receivers of the communication message.
+relatedParty RelatedPartyRef The party entity of the receiver (user)
+attachment Attachment The attachments of the communication message (when it is email type). 

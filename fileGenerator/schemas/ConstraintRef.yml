@@ -1,0 +1,18 @@
+description: ConstraintRef
+properties:
+- '@referredType':
+    description: The (class) type of the referred constraint.
+    type: string
+- href:
+    description: Hyperlink reference to the target constraint.
+    type: string
+- id:
+    description: reference id to the target constraint.
+    type: string
+- name:
+    description: Name given to the constraint.
+    type: string
+- version:
+    description: constraint version.
+    type: string
+type: object

@@ -1,0 +1,5 @@
+@referredType String Indicates the type of resource.
+href String Hyperlink to access a related party.
+id String Identifier of a related party.
+name String Name of related party.
+role String Role of related Party.

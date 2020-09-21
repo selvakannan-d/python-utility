@@ -1,0 +1,7 @@
+@type String Indicates the type of resource
+@basetype String Indicates the type of resource
+@schemaLocation String It provides the link to the schema describing REST resource
+email String Sender address of email, if the communication type is email
+id String ID of the sender
+name String Name of the sender
+phoneNumber String Phone number of the sender, if the communication type is SMS.

@@ -1,0 +1,34 @@
+description: Receiver
+properties:
+  '@type':
+    description: Indicates the type of resource
+    type: String
+  '@basetype':
+    description: Indicates the type of resource
+    type: String
+  '@schemaLocation':
+    description: It provides the link to the schema describing REST resource
+    type: String
+  appUserId:
+    description: ID of the mobile app user
+    type: String
+  email:
+    description: Receiver address of email, if the communication type is email
+    type: String
+  id:
+    description: ID of the receiver
+    type: String
+  ip:
+    description: IP address of the receiver
+    type: String
+  name:
+    description: Name of the receiver
+    type: String
+  phoneNumber:
+    description: Phone number of the receiver, if the communication type is SMS.
+    type: String
+  type:
+    description: "The type of receiver, like the email receiver could be in \u201C\
+      to\u201D,\u201Ccc\u201D or \u201Cbcc\u201D mode."
+    type: String
+type: object

@@ -1,0 +1,10 @@
+@type String Indicates the type of resource
+@basetype String Indicates the type of resource
+@schemaLocation String It provides the link to the schema describing REST resource
+appUserId String ID of the mobile app user
+email String Receiver address of email, if the communication type is email
+id String ID of the receiver
+ip String IP address of the receiver
+name String Name of the receiver
+phoneNumber String Phone number of the receiver, if the communication type is SMS.
+type String The type of receiver, like the email receiver could be in “to”,“cc” or “bcc” mode.

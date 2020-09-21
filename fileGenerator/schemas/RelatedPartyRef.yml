@@ -1,0 +1,18 @@
+description: RelatedPartyRef
+properties:
+  '@referredType':
+    description: Indicates the type of resource.
+    type: String
+  href:
+    description: Hyperlink to access a related party.
+    type: String
+  id:
+    description: Identifier of a related party.
+    type: String
+  name:
+    description: Name of related party.
+    type: String
+  role:
+    description: Role of related Party.
+    type: String
+type: object
