@@ -15,7 +15,7 @@ def validateYAML(__yaml_path):
 def readFilenames(dir):
     my_files = os.listdir(dir)
     for x in my_files :
-        if x.endswith('.yml'):
+        if x.endswith('.yml') or x.endswith('.yaml'):
             validateYAML(dir+'/'+x)
         else:
             if x.find(".") < 0 :
