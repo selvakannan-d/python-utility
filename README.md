@@ -4,7 +4,7 @@ Python utilities for day today work
 # Pre-requistie
     - python3
 
-```  
+  
 # file Generator
 
 This app is used to create file from the given input file
@@ -36,11 +36,12 @@ properties:
 type: object
 
 
+```
+How to run:
 
-- How to run
 
-
-> python --version               Python 3.8.6rc1
+> python --version               
+Python 3.8.6rc1
 
 > python .\schemaGenerator.py
 Enter the file name for the schema:file/test.txt
@@ -48,7 +49,8 @@ Enter the file name for the schema:file/test.txt
  --->
 ```
 
-```
+------------------------------------------------------------------------
+
 # file Validator
 
 This app is used to valiate files
@@ -63,7 +65,11 @@ This app is used to valiate files
         - if it has subfolders
             - -----------is an Folder <folder path>----------
 
-- How to rul
+```
+How to run:
+
+    > python --version               
+    Python 3.8.6rc1
 
     > python YAMLValidator
     Enter the folder/parent path of the yaml: < enter the path> 
