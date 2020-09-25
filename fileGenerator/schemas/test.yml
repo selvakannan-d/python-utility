@@ -1,6 +1,6 @@
 description: test
 properties:
-- name:
+-  name:
     description: this field holds name for the string
     type: string
 - ref:
