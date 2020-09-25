@@ -22,19 +22,18 @@ This app is used to create file from the given input file
          ref Attachment this field holds attachment object
          ```
          - e.g. output, out put are generated on "schema/"
-         ```
-description: test
-properties:
-- name:
-    description: this field holds name for the string
-    type: string
-- ref:
-    description: this field holds attachment object
-    items:
-      $ref: '#/components/schemas/ref'
-    type: array
-type: object
-
+         ```description: test
+            properties:
+            - name:
+                description: this field holds name for the string
+                type: string
+            - ref:
+                description: this field holds attachment object
+                items:
+                $ref: '#/components/schemas/ref'
+                type: array
+            type: object
+            ```
 
 ```
 How to run:
