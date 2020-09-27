@@ -5,8 +5,11 @@ import os
 def validateYAML(__yaml_path):
     with open(__yaml_path, 'r') as stream:
         try:
-            yaml.load(stream, Loader=yaml.FullLoader)
-            print('Valid YAML {0}'.format(__yaml_path))
+            yamlData = yaml.load(stream, Loader=yaml.FullLoader)
+            if yamlData == None:
+                print('Error on file: {0} : error: empty file'.format(__yaml_path))
+            else: 
+                print('Valid YAML {0}'.format(__yaml_path))
             return True
         except yaml.YAMLError as exception:
             print('Error on file: {0} : error: {1}'.format(__yaml_path,exception))
