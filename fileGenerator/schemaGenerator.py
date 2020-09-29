@@ -28,15 +28,20 @@ def readFile(fileName, file_desc):
             }                           
         else:
             print("{0} ---> {1}".format(attr, type.lower()))
-            type = "array"
             items = {
-                "$ref": "#/components/schemas/"+attr
+                "$ref": "#/components/schemas/"+type
             }
-            thisdict[attr] = {
-                "type": type,
-                "items": items,
-                "description": desc
-            }  
+            if "list" in desc.lower() and "[*]" in desc.lower():
+                thisdict[attr] = {
+                    "type": "array",
+                    "items": items,
+                    "description": desc
+                }  
+            else:
+                thisdict[attr] = {
+                    "items": items,
+                    "description": desc
+                }
         dictToCreate["properties"].append(thisdict)
         # dictToCreate["properties"] = dict(thisdict)
         

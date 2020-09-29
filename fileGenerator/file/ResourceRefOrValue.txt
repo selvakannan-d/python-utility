@@ -1,0 +1,21 @@
+@referredType string A string. The actual type of the target instance when needed for disambiguation.
+href string A string. The URI for the object itself.
+id string A string. Identifier of an instance of the resource. Required to be unique within the resource type. Used in URIs as the identifier for specific instances of a type.
+name string A string. A string used to give a name to the resource.
+category string A string. Category of the concrete resource. e.g Gold, Silver for MSISDN concrete resource.
+description string A string. free-text description of the resource.
+endOperatingDate DateTime A date time (DateTime). A date time( DateTime). The date till the resource is operating.
+resourceVersion string A string. A field that identifies the specific version of an instance of a resource.
+startOperatingDate DateTime A date time (DateTime). A date time( DateTime). The date from which the resource is operating.
+activationFeature Feature A list of features (Feature [*]). Applicable configuration features of a resource for activation.
+administrativeState ResourceAdministrativeStateType A resource administrative state type (ResourceAdministrativeStateType). Tracks the administrative state of the resource, such as locked, unlocked, shutdown and so on.
+attachment AttachmentRefOrValue A list of attachment ref or values (AttachmentRefOrValue [*]). the attribute type,schemaLocation and referredType are related to the contained entity and not to AttchmentRefOrValue itself.
+note Note A list of notes (Note [*]). Extra information about a given entity.
+operationalState ResourceOperationalStateType A resource operational state type (ResourceOperationalStateType). Tracks the operational state of the resource, such as enable, disable and so on.
+place RelatedPlaceRefOrValue A related place ref or value (RelatedPlaceRefOrValue). Related Entity reference. A related place defines a place described by reference or by value linked to a specific entity. The polymorphic attributes @type, @schemaLocation & @referredType are related to the place entity and not the RelatedPlaceRefOrValue class itself.
+relatedParty RelatedParty A list of related parties (RelatedParty [*]). Related Entity reference. A related party defines party or party role linked to a specific entity.
+resourceCharacteristic Characteristic A list of characteristics (Characteristic [*]). Describes a given characteristic of an object or entity through a name/value pair.
+resourceRelationship ResourceRelationship A list of resource relationships (ResourceRelationship [*]). Linked resources to the one instantiate, such as [bundled] if the resource is a bundle and you want to describe the bundled resources inside this bundle; [reliesOn] if the resource needs another already owned resource to rely on (e.g. an option on an already owned mobile access resource) [targets] or [isTargeted] (depending on the way of expressing the link) for any other kind of links that may be useful.
+resourceSpecification ResourceSpecificationRef A resource specification reference (ResourceSpecificationRef). The ResourceSpecification is required to realize a ProductSpecification.
+resourceStatus ResourceStatusType A resource status type (ResourceStatusType). Tracks the resource status of the resource, such as standby, alarm, available, reserved, suspended and so on.
+usageState ResourceUsageStateType A resource usage state type (ResourceUsageStateType). Tracks the usage state of the resource, such as idle, active, busy and so on.
